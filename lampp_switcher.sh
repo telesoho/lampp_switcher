@@ -67,7 +67,7 @@ function checklampplink {
     # create a new link
     echo "Try to create LAMPP link ..."
     cd /opt
-    ln -s "$LAMPP$LAMPP_VERSION" "lampp"
+    sudo ln -s "$LAMPP$LAMPP_VERSION" "lampp"
 
     ## check if is created
     if [[ -L "$LAMPP" && -d "$LAMPP" ]];
